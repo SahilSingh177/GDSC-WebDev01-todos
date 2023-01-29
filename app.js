@@ -3,13 +3,15 @@ showNotes();
 let addTitle = document.getElementById("addTitle");
 let addTxt = document.getElementById("addTxt");
 let addTime = document.getElementById("addTime");
-// If user adds a note, add it to the local storage
 let addBtn = document.getElementById("addBtn");
+// If user adds a note, add it to the local storage
+
 addBtn.addEventListener("click", function (e) {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
-  } else {
+  } else 
+  {
     notesObj = JSON.parse(notes);
   }
 
@@ -80,7 +82,7 @@ search.addEventListener("input", function () {
   console.log("Input event activated!", inputVal);
   let noteCards = document.getElementsByClassName("noteCard");
   Array.from(noteCards).forEach(function (element) {
-    let cardTxt = element.getElementsByTagName("p")[0].innerText;
+    let cardTxt = element.getElementsByTagName("h3")[0].innerText.toLowerCase();
     if (cardTxt.includes(inputVal)) {
       element.style.display = "block";
     } else {
@@ -106,3 +108,4 @@ search.addEventListener("input", function () {
 // To DOs
 // Add Edit function
 // Add Date and Time of note
+// Add Notification once the timer ends 
