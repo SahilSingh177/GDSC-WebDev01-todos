@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
 .noteCard {
   margin: 0.5rem 1rem;
+}
+
+::placeholder {
+  color: rgb(193, 183, 183) !important;
+  opacity: 1; /* Firefox */
+}
+
+#addbtndiv{
+  display: grid;
+    justify-content: space-around;
+}
+
+
+h1{
+  text-align: center;
+}
+
+.noteCard{
+      width: 18rem;
+      background-image: url(../lights.jpeg);
+      background-size: cover;
+      background-position: center;
+
+}
+
+
+
+.card-title{
+  font-weight: bold;
 }
