@@ -18,6 +18,17 @@ body {
 .bg-glass {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  background: transparent;
+}
+
+.bg-glass-r {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: transparent;
+}
+
+.bg-glass-r div {
+  background: transparent;
 }
 
 .classic-btn {
