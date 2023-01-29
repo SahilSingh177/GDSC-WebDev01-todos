@@ -1,3 +1,55 @@
+:root {
+  --border-radius: 4px;
+}
+
+html,
+body {
+  /* font-family: "SFProText", sans-serif !important; */
+  /* font-family: "SFRounded", sans-serif !important; */
+  font-family: "SFProDisplay", sans-serif !important;
+}
+
 .noteCard {
   margin: 0.5rem 1rem;
+}
+
+/* Element Styles */
+
+.bg-glass {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.classic-btn {
+  border-radius: var(--border-radius);
+  padding: 4px 12px;
+  min-width: 88px;
+  border: none;
+  font: inherit;
+  color: #373030;
+  outline: none;
+  text-decoration: none;
+  cursor: default;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.15s ease, color 0.2s ease;
+}
+
+.classic-btn:hover {
+  cursor: pointer;
+  /* background: linear-gradient(#4faefc, #006bff); */
+  background-color: #4faefc;
+  color: #fff;
+}
+
+.custom-form-inp {
+  border-radius: var(--border-radius);
+  padding: 4px 12px;
+  border: none;
+  font: inherit;
+  color: #373030;
+  outline: none;
+  text-decoration: none;
+  background: #fff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
