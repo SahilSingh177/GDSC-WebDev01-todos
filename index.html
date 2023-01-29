@@ -30,43 +30,33 @@
       href="/assets/favicon-16x16.png"
     />
     <link rel="manifest" href="/assets/site.webmanifest" />
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="./public/SFProText/stylesheet.css" />
+    <link rel="stylesheet" href="./public/SFRounded/stylesheet.css" />
+    <link rel="stylesheet" href="./public/SFProDisplay/stylesheet.css" />
   </head>
 
   <body background="bg.jpeg">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Magic Notes</a>
-        <right>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <form class="d-flex">
-                  <input
-                    class="form-control me-2"
-                    id="searchTxt"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
-              </li>
-            </ul>
-          </div>
-        </right>
+    <nav class="bg-glass">
+      <a class="nav-title" href="/">Magic Notes</a>
+      <div class="nav-list-wrapper">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <form class="d-flex">
+              <input
+                class="form-control me-2 custom-form-inp"
+                id="searchTxt"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="classic-btn" type="submit">Search</button>
+            </form>
+          </li>
+          <!-- <li>
+            <button>Click Me!</button>
+          </li> -->
+        </ul>
       </div>
     </nav>
     <div class="container my-3">
@@ -91,7 +81,7 @@
             aria-describedby="titlecard" 
           />
           <div class="mb-3">
-            <h5 class="card-title" >Description</h5>
+            <h5 class="card-title">Description</h5>
             <div class="form-group">
               <textarea style="background-color: black;" placeholder="Add description" class="form-control text-white" rows="3" id="addTxt"></textarea>
             </div>
@@ -99,6 +89,15 @@
          <div id="addbtndiv">
           <button class="" id="addBtn" >Add note</button>
          </div>
+              <textarea
+                placeholder="Add description"
+                class="form-control"
+                rows="3"
+                id="addTxt"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="addBtn">Add note</button>
         </div>
       </div>
     </div>
