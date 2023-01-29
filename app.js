@@ -50,7 +50,7 @@ function showNotes() {
     notesElm.innerHTML = html;
   } else {
     notesElm.innerHTML = `<div class="alert alert-primary" role="alert style="width: 18rem;">
-        No note found.Please enter a note above
+        No note's found.Please enter a note above
       </div>`;
   }
 }

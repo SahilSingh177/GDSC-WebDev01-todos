@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./public/SFProDisplay/stylesheet.css" />
   </head>
 
-  <body background="wallp4.webp">
+  <body background="bg.jpeg">
     <nav class="bg-glass">
       <a class="nav-title" href="/">Magic Notes</a>
       <div class="nav-list-wrapper">
@@ -60,11 +60,11 @@
       </div>
     </nav>
     <div class="container my-3">
-      <h1>Welcome to Magic Notes</h1>
+      <h1 class="text-white">To-Do List</h1>
       <div class="card">
         <div class="card-body">
           <div class="mb-3">
-            <h5 class="cardtitle">Add Title</h5>
+            <h5 class="cardtitle">Title</h5>
             <input
               type="text"
               class="form-control"
@@ -74,9 +74,14 @@
             />
           </div>
           <div class="mb-3">
-            <h5 class="card-title">Add a note</h5>
+            <h5 class="card-title">Description</h5>
             <div class="form-group">
-              <textarea class="form-control" rows="3" id="addTxt"></textarea>
+              <textarea
+                placeholder="Add description"
+                class="form-control"
+                rows="3"
+                id="addTxt"
+              ></textarea>
             </div>
           </div>
           <button class="btn btn-primary" id="addBtn">Add note</button>
@@ -85,7 +90,7 @@
     </div>
     <!-- my-3 is used for margin -->
     <div class="text-center">
-      <h3>Your saved notes</h3>
+      <h3 class="text-white">Your saved notes</h3>
       <hr />
       <div id="notes" class="row container-fluid">
         <!-- row class helps to put the card in row and container-fluid allows it to have distance from the sides -->
