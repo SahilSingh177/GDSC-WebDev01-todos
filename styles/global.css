@@ -11,6 +11,10 @@ body {
   font-family: "SFProDisplay", sans-serif !important;
 }
 
+body {
+  padding-bottom: 4rem;
+}
+
 .noteCard {
   margin: 0.5rem 1rem;
 }
@@ -90,11 +94,18 @@ h1 {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.main-container {
+  margin-top: 4rem;
+  max-width: 900px;
+}
+
 .main-card {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.25);
   border-radius: var(--border-radius);
   color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .bg-gray {
@@ -184,4 +195,10 @@ nav {
   .nav-list > li {
     display: unset;
   }
+}
+
+/* hacks */
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
 }
