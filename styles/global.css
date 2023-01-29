@@ -107,6 +107,11 @@ h1 {
   background-color: #373030;
 }
 
+.no-note-warning {
+  max-width: 400px;
+  margin: auto;
+}
+
 /* Navbar ✨ */
 
 nav {
