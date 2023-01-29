@@ -62,20 +62,33 @@
     <div class="container my-3">
       <h1 class="text-white">To-Do List</h1>
       <div class="card bg-glass-r">
-        <div class="card-body">
+        <div class="card-body bg-class" style="background-image: url(wallp4.webp);">
           <div class="mb-3">
             <h5 class="cardtitle">Title</h5>
-            <input
+            <input style="background-color: black;"
               type="text"
-              class="form-control"
+              class="form-control text-white"
               id="addTitle"
               aria-describedby="titlecard"
-              placeholder="Enter Title"
-            />
+              placeholder="Enter Title" 
+            />  
           </div>
+          <h5 class="cardtitle">Time</h5>
+          <input style="background-color: black;"
+            type="time"
+            class="form-control text-white"
+            id="addTime"
+            aria-describedby="titlecard" 
+          />
           <div class="mb-3">
             <h5 class="card-title">Description</h5>
             <div class="form-group">
+              <textarea style="background-color: black;" placeholder="Add description" class="form-control text-white" rows="3" id="addTxt"></textarea>
+            </div>
+          </div>
+         <div id="addbtndiv">
+          <button class="" id="addBtn" >Add note</button>
+         </div>
               <textarea
                 placeholder="Add description"
                 class="form-control"
