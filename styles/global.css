@@ -24,27 +24,23 @@ body {
   opacity: 1; /* Firefox */
 }
 
-#addbtndiv{
+#addbtndiv {
   display: grid;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
-
-h1{
+h1 {
   text-align: center;
 }
 
-.noteCard{
-      width: 18rem;
-      background-image: url(../lights.jpeg);
-      background-size: cover;
-      background-position: center;
-
+.noteCard {
+  width: 18rem;
+  background-image: url(../lights.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
-
-
-.card-title{
+.card-title {
   font-weight: bold;
 }
 /* Element Styles */
