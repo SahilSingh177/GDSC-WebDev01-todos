@@ -38,7 +38,7 @@
 
   <body background="bg.jpeg">
     <nav class="bg-glass">
-      <a class="nav-title" href="/">Magic Notes</a>
+      <a class="nav-title" href="/">Basic Notes</a>
       <div class="nav-list-wrapper">
         <ul class="nav-list">
           <li class="nav-item">
@@ -61,43 +61,39 @@
     </nav>
     <div class="container my-3">
       <h1 class="text-white">To-Do List</h1>
-      <div class="card bg-glass-r">
-        <div class="card-body bg-class" style="background-image: url(wallp4.webp);">
+      <div class="card bg-glass-r main-card">
+        <div class="card-body rounded">
           <div class="mb-3">
             <h5 class="cardtitle">Title</h5>
-            <input style="background-color: black;"
+            <input
               type="text"
-              class="form-control text-white"
+              class="form-control text-white bg-gray"
               id="addTitle"
               aria-describedby="titlecard"
-              placeholder="Enter Title" 
-            />  
+              placeholder="Enter Title"
+            />
           </div>
           <h5 class="cardtitle">Time</h5>
-          <input style="background-color: black;"
+          <input
             type="time"
-            class="form-control text-white"
+            class="form-control text-white bg-gray"
             id="addTime"
-            aria-describedby="titlecard" 
+            aria-describedby="titlecard"
           />
-          <div class="mb-3">
+          <div class="my-3">
             <h5 class="card-title">Description</h5>
             <div class="form-group">
-              <textarea style="background-color: black;" placeholder="Add description" class="form-control text-white" rows="3" id="addTxt"></textarea>
-            </div>
-          </div>
-         <div id="addbtndiv">
-          <button class="" id="addBtn" >Add note</button>
-         </div>
               <textarea
                 placeholder="Add description"
-                class="form-control"
+                class="form-control text-white bg-gray"
                 rows="3"
                 id="addTxt"
               ></textarea>
             </div>
           </div>
-          <button class="classic-btn" id="addBtn">Add note</button>
+          <div id="addbtndiv">
+            <button class="classic-btn" id="addBtn">Add note</button>
+          </div>
         </div>
       </div>
     </div>
