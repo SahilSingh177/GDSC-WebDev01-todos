@@ -2,6 +2,7 @@ showNotes();
 
 let addTitle = document.getElementById("addTitle");
 let addTxt = document.getElementById("addTxt");
+let addTime = document.getElementById("addTime");
 // If user adds a note, add it to the local storage
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function (e) {
@@ -15,6 +16,7 @@ addBtn.addEventListener("click", function (e) {
   let myObj = {
     title: addTitle.value,
     text: addTxt.value,
+    time: addTime.value,
   };
 
   notesObj.push(myObj);
@@ -35,11 +37,12 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function (element, index) {
     html += ` 
-        <div class="noteCard my-2 mx-3 card" style="width: 18rem;">
+        <div class="noteCard my-2 mx-3 card">
         <div class="container-fluid card-body">
-            <h5 class="card-title">${element.title}</h5>
+            <h3 class="card-title">${element.title}</h3>
             <p class="card-text" id='${index}'>${element.text}</p>
-            <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+            <h3 class="card-title">${element.time}</h3>
+            <button id="${index}" onclick="deleteNote(this.id)" class="classic-btn">Delete Note</button>
             <!--<button id="${index}" onclick="editNote(this.id)" class="btn btn-primary">Edit Note</button>-->
         </div>
      </div> `;
